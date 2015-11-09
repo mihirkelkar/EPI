@@ -1,0 +1,12 @@
+def perSets(array, number):
+  perm = len(array) ** number
+  for ii in range(0 , perm):
+    temp = ii
+    for jj in range(0, number):
+      index = temp % len(array)
+      print array[index],
+      index /= len(array)
+    print "\n"
+
+perSets([2, 3, 4], 2)
+perSets([2, 3, 4], 3)
