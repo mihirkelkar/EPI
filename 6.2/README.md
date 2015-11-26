@@ -1,0 +1,1 @@
+Write a function that takes in an array as input which represents an array A of digits encoding a decimal number. and returns an array of digits that represnts the number + 1. eg <1, 2, 9> will return <1, 3, 0>
