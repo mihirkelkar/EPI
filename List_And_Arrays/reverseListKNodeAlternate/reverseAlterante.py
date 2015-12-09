@@ -1,4 +1,4 @@
-#Need to check if code is correct
+Checked code looks okay. 
 def reverseAlternate(llist):
   curr = llist.head
   listlen = 0
@@ -34,5 +34,5 @@ def reverseAlternate(llist):
           self.tail = prev
       else:
         self.tail = firstNode  
-       
+    break   
     
