@@ -1,0 +1,10 @@
+word_dict = ['i', 'like', 'sam', 'sung', 'samsung', 'ice', 'cream', 'icecream']
+
+def wordBreak(word):
+  if len(word) == 0:
+    return True
+  #Create a vector of size word_dict. vec[i] will be True if str(0, i-1) is True
+  vec = [False for ii in word_dict]
+  print vec
+
+wordBreak()
