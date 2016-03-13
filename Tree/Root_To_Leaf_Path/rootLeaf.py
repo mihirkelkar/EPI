@@ -5,15 +5,15 @@ class Node(object):
     self.right = None
 
 def checkPath(valuecheck, root, sum=0):
-  if sum + root.value == valuecheck:
+  if root == None:
+    return False
+  if root.value + sum == valuecheck:
     return True
-  else:
-    if root.left != None:
-        retleft = checkPath(valuecheck, root.left, sum + root.value)
-    if root.right != None:
-      retright = checkPath(valuecheck, root.right, sum + root.value)
-    return retleft or retright
-    
+  retLeft = checkPath(valuecheck, root.left, sum + root.value)
+  retRight = checkPath(valuecheck, root.right, sum + root.value)
+  return retLeft or retRight
+
+
 def main():
   root = Node(1)
   root.left = Node(2)
